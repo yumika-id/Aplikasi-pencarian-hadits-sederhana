@@ -5,8 +5,8 @@ if($q==""){
 }
 if(isset($_POST["limit"], $_POST["start"]))
 {
-$string = file_get_contents("https://api.yumika.id/hadits/?q=".urlencode($q)."&hal=".$_POST['start']."&key=0ac2e378c1e8a52157ea50ea41d998a6");
-
+$string = file_get_contents("https://api.yumika.id/hadits/?q=".urlencode($q)."&hal=".$_POST['start']."&key=XXX");
+//check "https://yumika.id/api-pencarian-hadits-terlengkap/" for latest key
 
 	//check "https://yumika.id/api-radio-online-indonesia/" for latest key
 $result = json_decode($string, true);
